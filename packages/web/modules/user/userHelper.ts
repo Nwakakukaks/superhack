@@ -1,7 +1,7 @@
 import logger from '@core/logger/logger';
 import { Blockchains } from '@core/enums/blockchains';
 import { generateUUID } from '@core/helpers/generateHelper';
-import { signXDCSignature } from '@modules/blockchains/Network/verification/verification';
+import { signNetworkSignature } from '@modules/blockchains/Network/verification/verification';
 import { signInUser } from '@services/web/userService';
 import localStorageHelper from '@core/storage/localStorageHelper';
 
@@ -14,8 +14,8 @@ export const authenticateUser = async (
 
   try {
     let signature = '';
-    if (blockchain === Blockchains.XDC) {
-      signature = await signXDCSignature('Blocks Login');
+    if (blockchain === Blockchains.Network) {
+      signature = await signNetworkSignature('Blocks Login');
     } else {
       // Randomize signature to avoid predictability
       signature = generateUUID();

@@ -16,8 +16,7 @@ const Footer = () => {
             </div>
             <p className={styles.appDescription}>
               Blocks is a blockchain app manager that lets you create,
-              manage and view analytics for all your smart contracts on the
-              blockchain. Supported networks: Optimism, Base, Zora and Mode.
+              manage and view analytics for all your smart contracts on Optimism, Base, Zora and Mode blockchain.
             </p>
             <div className={styles.label}>Connect with us</div>
             <div className={styles.followUs}>

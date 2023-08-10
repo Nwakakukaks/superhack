@@ -6,11 +6,17 @@ import { Environments } from '@core/enums/environments';
 import { UserWallet } from '@core/entities/userWallet';
 
 const appsCollection =
-  Config.environment === Environments.Mainnet ? 'prod-apps' : 'staging-apps';
+  Config.environment === Environments.Optimism ? 'optimism-apps' :
+  Config.environment === Environments.Base ? 'base-apps' :
+  Config.environment === Environments.Zora ? 'zora-apps' :
+  Config.environment === Environments.Mode ? 'mode-apps' : 'unknown-apps';
+
 const userWalletsCollection =
-  Config.environment === Environments.Mainnet
-    ? 'prod-userWallets'
-    : 'staging-userWallets';
+  Config.environment === Environments.Optimism ? 'optimism-userWallets' :
+  Config.environment === Environments.Base ? 'base-userWallets' :
+  Config.environment === Environments.Zora ? 'zora-userWallets' :
+  Config.environment === Environments.Mode ? 'mode-userWallets' : 'unknown-userWallets';
+
 
 export class FirestoreDB {
   // APPS

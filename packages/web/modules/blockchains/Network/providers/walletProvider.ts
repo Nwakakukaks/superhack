@@ -149,10 +149,14 @@ export const deployContract = async (
 
   // check if the network matches the selected environment
   if (
-    (environment === Environments.Testnet &&
-      currentNetwork !== Network.Testnet) ||
-    (environment === Environments.Mainnet &&
-      currentNetwork !== Network.Mainnet)
+    (environment === Environments.Optimism &&
+      currentNetwork !== Network.Optimism) ||
+    (environment === Environments.Base &&
+      currentNetwork !== Network.Base) ||
+    (environment === Environments.Zora &&
+      currentNetwork !== Network.Zora) ||
+    (environment === Environments.Mode &&
+      currentNetwork !== Network.Mode)
   ) {
     throw new Error(
       'The connected network does not match the selected environment',

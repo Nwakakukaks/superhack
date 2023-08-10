@@ -27,7 +27,7 @@ export default function SelectBlockchainDialog({
       </Modal.Header>
       <Modal.Body>
         <div className={styles.selection}>
-          <a onClick={() => onSelect(Blockchains.XDC)}>
+          <a onClick={() => onSelect(Blockchains.Network)}>
             <img src="/assets/icons/fantom-logo-round.svg" alt="Apothem" />
             <span>Supported Networks: Optimism, Base, Zora, Mode</span>
             <span className={styles.muted}>MetaMask</span>
