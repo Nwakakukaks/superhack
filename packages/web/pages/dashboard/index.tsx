@@ -8,12 +8,12 @@ import MessageDialogContext from '@components/context/MessageDialogContext';
 import MainPanel from '@components/MainPanel/MainPanel';
 import ConfirmDialog from '@components/dialogs/ConfirmDialog/ConfirmDialog';
 import {
-  isWalletConnected as isXDCWalletConnected,
-  getWallet as getXDCWallet,
-  connectWallet as connectXDCWallet,
-  isProviderAvailable as isXDCProviderAvailable,
-  isWalletReady as isXDCWalletReady,
-} from '@modules/blockchains/xdc/providers/walletProvider';
+  isWalletConnected as isNetworkWalletConnected,
+  getWallet as getNetworkWallet,
+  connectWallet as connectNetworkWallet,
+  isProviderAvailable as isNetworkProviderAvailable,
+  isWalletReady as isNetworkWalletReady,
+} from '@modules/blockchains/Network/providers/walletProvider';
 import logger from '@core/logger/logger';
 import { Config } from '@core/config/config';
 import {
@@ -26,7 +26,7 @@ import localStorageHelper from '@core/storage/localStorageHelper';
 import { Environments } from '@core/enums/environments';
 
 const DashboardPage: NextPage = () => {
-  const blockchain = Blockchains.XDC;
+  const blockchain = Blockchains.Network;
 
   // States
   const [messageDialogTitle, setMessageDialogTitle] = useState('');
@@ -54,9 +54,9 @@ const DashboardPage: NextPage = () => {
       logger.logInfo('init', 'Checking wallet connection.');
 
       // Check if wallet is already connected via SDK
-      const walletConnected = await isXDCWalletConnected();
+      const walletConnected = await isNetworkWalletConnected();
       if (walletConnected) {
-        const wallet = await getXDCWallet();
+        const wallet = await getNetworkWallet();
 
         logger.logInfo('init', 'Wallet connected on address ' + walletAddress);
 
@@ -94,23 +94,23 @@ const DashboardPage: NextPage = () => {
   }, [walletAddress]);
 
   const handleOnConnectClick = async () => {
-    if (!isXDCProviderAvailable()) {
+    if (!isNetworkProviderAvailable()) {
       showMessage(
-        'Install XDCPay',
-        'XDCPay extension is not installed. Please install it from the Chrome Web Store.',
+        'Install Metamask',
+        'Metamask extension is not installed. Please install it from the Chrome Web Store.',
       );
       return;
     }
-    if (!isXDCWalletReady()) {
+    if (!isNetworkWalletReady()) {
       showMessage(
-        'Open XDC Pay Extension First',
-        'XDCPay is not connected. Please open the extension and connect to a wallet.',
+        'Open Metamask Extension First',
+        'Metamask wallet is not connected. Please open the extension and connect to a wallet.',
       );
       return;
     }
 
-    await connectXDCWallet();
-    const wallet = await getXDCWallet();
+    await connectNetworkWallet();
+    const wallet = await getNetworkWallet();
     const walletAddress = wallet?.address;
 
     if (walletAddress) {

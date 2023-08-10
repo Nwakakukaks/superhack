@@ -23,7 +23,7 @@ import {
   getExplorerAddressUrl,
   getExplorerTxUrl,
   shortenHash,
-} from '@modules/blockchains/xdc/providers/walletProvider';
+} from '@modules/blockchains/Network/providers/walletProvider';
 import MessageDialogContext from '@components/context/MessageDialogContext';
 import DeployDialog from '@components/dialogs/DeployDialog/DeployDialog';
 import { Blockchains } from '@core/enums/blockchains';
