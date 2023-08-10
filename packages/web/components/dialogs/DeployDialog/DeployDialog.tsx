@@ -62,7 +62,7 @@ export default function DeployDialog({
       </Modal.Header>
       <Modal.Body>
         <div>
-          You are about to deploy {app.name} to {blockchain} {environment}.
+          You are about to deploy {app.name} to {blockchain}: {environment}.
         </div>
         <Form className="mt-3">
           <Form.Group className="mb-3">
