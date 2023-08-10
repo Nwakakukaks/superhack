@@ -1,11 +1,11 @@
 export enum Blockchains {
   None = '',
-  Networks = 'Networks',
+  Network = 'Network',
 }
 
 export const BlockchainLabelMap = new Map<Blockchains, string>([
   [Blockchains.None, ''],
-  [Blockchains.Networks, 'Networks'],
+  [Blockchains.Network, 'Network'],
 ]);
 
 export const getBlockchainLabel = (
@@ -14,8 +14,8 @@ export const getBlockchainLabel = (
 
 export const getBlockchainBySlug = (slug: string): Blockchains => {
   switch (slug) {
-    case 'networks':
-      return Blockchains.Networks;
+    case 'network':
+      return Blockchains.Network;
     default:
       return Blockchains.None;
   }
