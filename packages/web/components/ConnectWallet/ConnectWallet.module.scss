@@ -54,6 +54,15 @@
   margin-bottom: 10px;
 }
 
+.buttonHighlightWC,
+.buttonHighlightWC:active,
+.buttonHighlightWC:focus {
+  background-color: rgb(170, 121, 177);
+  color: black;
+  border: none;
+  margin-bottom: 10px;
+}
+
 .buttonDefault,
 .buttonDefault:active,
 .buttonDefault:focus {

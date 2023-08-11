@@ -32,14 +32,21 @@ const ConnectWallet = ({
             </h1>
             <div className={styles.subtitle}>{t.connectWalletSubtitle}</div>
             <p>{t.connectWalletDescription}</p>
-            <div style={{ paddingTop: 30 }}>
+            <div style={{ paddingTop: 30}}>
               <Button
                 className={styles.buttonHighlight}
                 onClick={() => onConnectClick()}
                 disabled={isLoading}
               >
                 {isLoading ? 'Connecting...' : t.connectButtonLabel}
-              </Button>
+              </Button>,
+              <Button
+                className={styles.buttonHighlightWC}
+                onClick={() => onConnectClick()}
+                disabled={isLoading}
+              >
+                {isLoading ? 'Connecting...' : t.connectButtonLabelWC}
+              </Button>,
             </div>
           </div>
         </Col>

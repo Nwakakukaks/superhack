@@ -75,7 +75,7 @@ export default function Overview({
       })) || [];
 
     // Add a default row for each environment if it doesn't already exist
-    [Environments.Mainnet, Environments.Testnet].forEach((env) => {
+    [Environments.Optimism, Environments.Base, Environments.Zora, Environments.Mode].forEach((env) => {
       if (!rows.find((row) => row.environment === env)) {
         rows.push({
           environment: env,
@@ -236,7 +236,7 @@ export default function Overview({
       <DeployDialog
         show={showDeployDialog}
         app={currentApp}
-        blockchain={Blockchains.XDC}
+        blockchain={Blockchains.Network}
         environment={deployEnvironment}
         onCancel={() => setShowDeployDialog(false)}
         onDeploy={(gasLimit, args) => deploy(gasLimit, args)}
