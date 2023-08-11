@@ -63,7 +63,7 @@ const MainLanding: NextPage = () => {
               <Col lg={7} md={12} sm={12}>
                 <div className="feature-image">
                   <img
-                    src="/assets/images/screenshot.png"
+                    src="/assets/images/homeblock.png"
                     alt="screenshot"
                     className="framed-image"
                   />
