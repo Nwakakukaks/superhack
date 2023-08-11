@@ -94,7 +94,7 @@ export const getExplorerAddressUrl = (
     return `https://goerli.basescan.org/address/${hash}`;
   }
   if (environment === Environments.Zora) {
-    return `https://explorer.zora.energy/address/${hash}`;
+    return `https://testnet.explorer.zora.energy/address/${hash}`;
   }
   if (environment === Environments.Mode) {
     return `https://sepolia.explorer.mode.network/address/${hash}`;
@@ -113,7 +113,7 @@ export const getExplorerTxUrl = (
     return `https://goerli.basescan.org/tx/${hash}`;
   }
   if (environment === Environments.Zora) {
-    return `https://explorer.zora.energy/tx/${hash}`;
+    return `https://testnet.explorer.zora.energy/tx/${hash}`;
   }
   if (environment === Environments.Mode) {
     return `https://sepolia.explorer.mode.network/tx/${hash}`;

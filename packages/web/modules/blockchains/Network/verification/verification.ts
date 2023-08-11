@@ -5,7 +5,7 @@ import Web3 from 'web3';
 const rpcEndpoints: { [network: string]: string } = {
   optimism: 'https://rpc.ankr.com/optimism_testnet',
   base: 'https://base-goerli.public.blastapi.io',
-  zora: 'https://rpc.zora.energy',
+  zora: 'https://testnet.rpc.zora.energy',
   mode: 'https://sepolia.mode.network',
   // Add more networks here as needed
 };

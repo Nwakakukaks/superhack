@@ -276,7 +276,7 @@ const MainLanding: NextPage = () => {
                     Be among the first to experience our beta preview and
                     experience a new way of creating and deploying smart
                     contracts. We welcome your valuable feedback as it can
-                    significantly shape Block Fabric's future.{' '}
+                    significantly shape Block's future.{' '}
                   </p>
                 </div>
                 <div>
