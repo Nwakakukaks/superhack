@@ -8,7 +8,7 @@
 
 **Please note**: This alpha version of the application is for testing and development purposes only. The final version may differ significantly in terms of features, appearance, and functionality.
 
-# Blocks: Smart Contracts Manager
+# Blocks: Smart Contracts Deployer and Manager
 
 <p align="center">
     <img width="600px" src="docs/screenshots/blocks-connect.png" alt="Intro Screenshot">
@@ -53,7 +53,7 @@ With no-code templates, multiple wallet integrations, and robust analytics, it c
 - Compile your smart contracts directly on the platform.
 
 **Built in Contract Deployer**
-- Deploy on XDC mainnet and testnet with just a button click.
+- Deploy on OPTIMISM, BASE, ZORA and MODE with just a button click.
 
 **Coming Soon**
 - For advanced users: Build contracts with custom code.
@@ -68,7 +68,7 @@ With no-code templates, multiple wallet integrations, and robust analytics, it c
     <img width="600px" src="docs/screenshots/screenshot-pricing.png" alt="">
 </p>
 
-While we strive to keep the majority of features free so anyone can experience and use BlockFabric, we plan to introduce a freemium model in the future to sustain the project's development. The platform will still remain free for basic use, and allows unlimited restrictions for paid users.
+While we strive to keep the majority of features free so anyone can experience and use Blocks, we plan to introduce a freemium model in the future to sustain the project's development. The platform will still remain free for basic use, and allows unlimited restrictions for paid users.
 
 **Community Contributed Templates**: We are also considering to open up our templates collection so other developers can build and share their templates and possibly earn commission from their use.
 
@@ -103,7 +103,7 @@ While we strive to keep the majority of features free so anyone can experience a
 </p>
 
 #### Connect Wallet & Handshaking
-- Users first connect to XDC Blockchain using a wallet provider like XDCPay. After connecting, user then signs a message to the Authentication API, which verifies the signed message and returns a generated JWT token for access to the Core API.
+- Users first connects to the Blockchain using a wallet provider like Metamask. After connecting, user then signs a message to the Authentication API, which verifies the signed message and returns a generated JWT token for access to the Core API.
 
 #### Creating an App
 - Users would create their first app after accessing the platform. An app is a container that will hold and manage the smart contract. Users can create multiple apps.
@@ -117,12 +117,12 @@ While we strive to keep the majority of features free so anyone can experience a
 
 ## Project Roadmap
 
-**Q2 2023**
+**Q3 2023**
 - Project inception, planning and prototyping
 - MVP product engineering and development
 - Beta launch on mainnet
 
-**Q3 & Q4 2023**
+**Q1 & Q2 2024**
 - Feature implementation and refinements
     - Version management, wallet management, analytics and insights
     - Contract import and custom code
