@@ -4,7 +4,7 @@
 
 **Project Goal**: We want to give anyone the ability to effortlessly create, deploy, manage, and gain insights into their smart contracts. 
 
-**Project Website**: [blocks](https://vercel.app/)
+**Project Website**: [website](https://blocks-superhack.vercel.app)
 
 **Please note**: This alpha version of the application is for testing and development purposes only. The final version may differ significantly in terms of features, appearance, and functionality.
 
