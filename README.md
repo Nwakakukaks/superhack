@@ -137,8 +137,13 @@ While we strive to keep the majority of features free so anyone can experience a
 </p>
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/blocks-middle.png" alt="About Screenshot">
+    <img width="600px" src="docs/screenshots/screenshot-features.png" alt="About Screenshot">
 </p>
+
+<p align="center">
+    <img width="600px" src="docs/screenshots/screenshot-templates.png" alt="About Screenshot">
+</p>
+
 
 <p align="center">
     <img width="600px" src="docs/screenshots/blocks-connect.png" alt="About Screenshot">
