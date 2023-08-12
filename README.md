@@ -29,7 +29,7 @@ This contemplation led us to conceive Blocks - a platform meticulously crafted t
 
 **Simplified way to manage smart contracts.**
 
-Blocks is a user-friendly blockchain app manager for the **XDC Blockchain** blockchain. It enables effortless creation, deployment, management, and analysis of smart contracts for both beginners and expert blockchain engineers. 
+Blocks is a user-friendly blockchain app manager for **OPTIMISM, BASE, ZORA AND MODE** blockchain. It enables effortless creation, deployment, management, and analysis of smart contracts for both beginners and expert blockchain engineers. 
 
 With no-code templates, multiple wallet integrations, and robust analytics, it caters to both beginners and advanced users, democratizing access to blockchain technology and paving the way for a more decentralized digital future.
 
@@ -152,8 +152,5 @@ While we strive to keep the majority of features free so anyone can experience a
     <img width="600px" src="docs/screenshots/blocks-details.png" alt="About Screenshot">
 </p>
 
-<p align="center">
-    <img width="600px" src="docs/screenshots/blocks-token.png" alt="About Screenshot">
-</p>
 
 
