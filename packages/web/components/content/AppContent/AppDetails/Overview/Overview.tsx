@@ -174,7 +174,7 @@ export default function Overview({
               <TableCell>Environment</TableCell>
               <TableCell>Status</TableCell>
               <TableCell>Transaction Hash</TableCell>
-              <TableCell>Wallet</TableCell>
+              <TableCell>Address</TableCell>
               <TableCell>Deployed Date</TableCell>
             </TableRow>
           </TableHead>

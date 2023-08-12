@@ -40,13 +40,7 @@ const ConnectWallet = ({
               >
                 {isLoading ? 'Connecting...' : t.connectButtonLabel}
               </Button>,
-              <Button
-                className={styles.buttonHighlightWC}
-                onClick={() => onConnectClick()}
-                disabled={isLoading}
-              >
-                {isLoading ? 'Connecting...' : t.connectButtonLabelWC}
-              </Button>,
+              
             </div>
           </div>
         </Col>
