@@ -53,7 +53,7 @@ export const getNetwork = (): Network => {
     ? Network.Optimism
     : window.ethereum.networkVersion === '84531'
     ? Network.Base
-    : window.ethereum.networkVersion === '7777777'
+    : window.ethereum.networkVersion === '999'
     ? Network.Zora
     : window.ethereum.networkVersion === '919'
     ? Network.Mode

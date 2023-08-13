@@ -3,9 +3,9 @@ import Web3 from 'web3';
 
 // Define RPC endpoints for each network
 const rpcEndpoints: { [network: string]: string } = {
-  optimism: 'https://rpc.ankr.com/optimism_testnet',
+  optimism: 'https://goerli.optimism.io',
   base: 'https://base-goerli.public.blastapi.io',
-  zora: 'https://testnet.rpc.zora.energy',
+  zora: 'https://testnet.rpc.zora.energy/',
   mode: 'https://sepolia.mode.network',
   // Add more networks here as needed
 };
@@ -61,7 +61,7 @@ const getNetworkFromChainId = (chainId: string): string => {
   switch (chainId) {
     case '84531':
       return 'base';
-    case '7777777':
+    case '999':
       return 'zora';
     case '919':
       return 'mode';
