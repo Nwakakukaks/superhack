@@ -8,7 +8,7 @@ type RequestData = {
   blockchain: string;
   walletAddress: string;
   signature: string;
-};
+}; 
 
 type ResponseData = JWT;
 

@@ -11,7 +11,7 @@ import { getCurrentTimestamp } from '@core/helpers/datetimeHelper';
 export interface ApiSignInUserParams {
   blockchain: string;
   walletAddress: string;
-  signature: string;
+  signature: string; 
 }
 
 export const apiSignInUser = async (

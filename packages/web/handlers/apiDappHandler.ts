@@ -10,7 +10,7 @@ export interface ApiCreateDappRequest {
   name: string;
   description: string;
   userId: string;
-}
+} 
 
 export interface ApiCreateDappResponse {
   app?: App;
